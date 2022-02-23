@@ -1,0 +1,25 @@
+{
+  "name": "webpack-fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "debug": "node --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "prod": "npm run webpack -- --env mode=production",
+    "dev": "npm run webpack-dev-server -- --env mode=development",
+    "prod:debug": "npm run debug -- --env mode=production",
+    "dev:debug": "npm run debug -- --env mode=development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  }
+}
