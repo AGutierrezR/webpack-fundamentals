@@ -3,10 +3,5 @@ import { top, bottom } from './footer'
 import makeButton from './button'
 import { makeColorStyle } from './button-styles'
 
-console.log(
-  nav(),
-  top,
-  bottom,
-  makeButton('Primary'),
-  makeColorStyle('steelblue')
-)
+const button = makeButton('Yay! A Button')
+document.body.appendChild(button)
