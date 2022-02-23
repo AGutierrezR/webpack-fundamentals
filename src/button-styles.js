@@ -1,5 +1,5 @@
 const red = 'color: red;'
-const blue = 'color: red;'
+const blue = 'color: blue;'
 const makeColorStyle = function createColor(color) {
   return `color: ${color};`
 }
