@@ -1,3 +1,5 @@
-module.exports = function buttonFactory(buttonName) {
+function buttonFactory(buttonName) {
   return `Button: ${buttonName}`
 }
+
+module.exports = buttonFactory

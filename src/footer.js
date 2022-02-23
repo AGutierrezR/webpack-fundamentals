@@ -1,5 +1,4 @@
-export const top = 'top'
-export const bottom = 'bottom'
+const top = 'top'
+const bottom = 'bottom'
 
-// or
-// export { top, bottom }
+export { top, bottom }
