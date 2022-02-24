@@ -8,6 +8,14 @@ module.exports = (env) => {
   return merge(
     {
       mode,
+      module: {
+        rules: [
+          {
+            test: /\.(png|jpe?g|gif)$/i,
+            use: ['url-loader'],
+          },
+        ],
+      },
       plugins: [new HtmlWebpackPlugin(), new webpack.ProgressPlugin()],
     },
     modeConfig(mode)
