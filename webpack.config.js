@@ -12,7 +12,7 @@ module.exports = (env) => {
         rules: [
           {
             test: /\.(png|jpe?g|gif)$/i,
-            use: ['url-loader'],
+            use: [{ loader: 'url-loader', options: { limit: 5000 } }],
           },
         ],
       },
