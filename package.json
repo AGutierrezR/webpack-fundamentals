@@ -8,7 +8,7 @@
     "webpack-dev-server": "webpack-dev-server",
     "debug": "node --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "prod": "npm run webpack -- --env mode=production",
-    "dev": "npm run webpack-dev-server -- --env mode=development",
+    "dev": "npm run webpack-dev-server -- --env mode=development --hot",
     "prod:debug": "npm run debug -- --env mode=production",
     "dev:debug": "npm run debug -- --env mode=development"
   },
@@ -17,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4",
