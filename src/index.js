@@ -3,12 +3,18 @@ import { footer } from './footer'
 import makeButton from './button'
 import { makeColorStyle } from './button-styles'
 import makeImage from './images'
+import Foo from './foo.ts'
+
+const foo = new Foo()
+
+console.log(foo.bar)
 
 import './webpack-logo.jpeg'
 
 import './base.css'
 import './button.css'
 import './footer.css'
+import { compileSchema } from 'ajv/dist/compile'
 
 const imageUrl =
   'https://raw.githubusercontent.com/webpack/media/master/logo/logo-on-white-bg.png'
