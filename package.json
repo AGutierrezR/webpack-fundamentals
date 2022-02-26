@@ -11,6 +11,8 @@
     "dev": "npm run webpack-dev-server -- --env mode=development --hot",
     "prod:typescript": "npm run prod -- --env presets=typescript",
     "prod:analyze": "npm run prod -- --env presets=analyze",
+    "prod:compress": "npm run prod -- --env presets=compress",
+    "prod:compress:analyze": "npm run prod -- --env presets=compress --env presets=analyze",
     "prod:debug": "npm run debug -- --env mode=production",
     "dev:debug": "npm run debug -- --env mode=development"
   },
@@ -18,6 +20,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "compression-webpack-plugin": "^9.2.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.3",
