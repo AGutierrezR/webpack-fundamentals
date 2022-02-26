@@ -3,11 +3,10 @@ import { footer } from './footer'
 import makeButton from './button'
 import { makeColorStyle } from './button-styles'
 import makeImage from './images'
-import Foo from './foo.ts'
 
-const foo = new Foo()
-
-console.log(foo.bar)
+// import Foo from './foo.ts'
+// const foo = new Foo()
+// console.log(foo.bar)
 
 import './webpack-logo.jpeg'
 
